@@ -3,7 +3,13 @@
  *
  * Write a function that calculates the sum of all the numbers in an array
  */
-
+var sumOfArray = function(myArray){
+	var sum = 0
+	for(var i = 0; i < myArray.length; i = i +1) {
+		sum = sum + myArray[i]
+	}
+		return sum
+}
 
 
 console.assert(sumOfArray([1, 2]) === 3);
@@ -15,7 +21,16 @@ console.assert(sumOfArray([10, 9, 8]) === 27);
 
 // Write a function maxOfArray() that takes an array of
 // numbers as an argument and finds the highest number.
+var maxArr = function(inputArray) {
+	if(inputArray[0] > inputArr[1] {
+		var max = inputArr[0]
+	} else {
+		var max = inputArr[1]
+	} for(var i =2; i < inputArr.length;)
 
+}
+
+for(maxArr i = 1; i < array)
 
 console.assert(maxOfArray([2,4,3]) === 4)
 console.assert(maxOfArray([10,9,8,100,7,6]) === 100)
@@ -30,7 +45,20 @@ console.assert(isNaN(maxOfArray([1,2,'bucklemyshoe'])))
 
 function isVowel(symbol){
     // YOUR CODE HERE
-}
+    var vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+   
+    var isVowel = function (inputString){
+    	for(var i = 0; i < vowels.length; i++) {
+    		var vowelLetter = vowels[i]
+    		if(inputString === vowelLetter) {
+    			return true
+    		}
+    	}
+    	return false
+    }
+    	
+
+
 
 console.assert(isVowel(0) === false);
 console.assert(isVowel("B") === false);
@@ -80,6 +108,9 @@ console.assert(fizzbuzz(10) === "..fizz.buzzfizz..fizzbuzz")
 
 function findLongestWord(sentence){
     // YOUR CODE HERE
+    var findLongestWord = function(inputString) {
+
+    }
 }
 
 console.assert(findLongestWord("a book full of dogs") === "book")
